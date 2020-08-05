@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "976355838519",
+    "firebase_url": "https://ligchat-d8920.firebaseio.com",
+    "project_id": "ligchat-d8920",
+    "storage_bucket": "ligchat-d8920.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976355838519:android:87ad9b4c88cbbd9d938db2",
+        "android_client_info": {
+          "package_name": "com.pparreno.ligchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976355838519-sm5ph6q05vd242d2mt3vt8457kllgen9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKWwY24eyCtu7Y-Yohy9_oBMeVMUQBTnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976355838519-sm5ph6q05vd242d2mt3vt8457kllgen9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
