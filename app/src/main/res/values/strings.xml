@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">LigChat</string>
+    <string name="app_name">Chat App</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
+    <string name="login_underline"><u>Login</u></string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="terms_agreement_text">By signing up, you agree to the Terms of Service and Privacy Policy, including CookieUse. Others will be able to find you by searching for your email address or phone number when provided.</string>
 </resources>

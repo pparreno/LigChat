@@ -3,4 +3,5 @@
     <dimen name="btn_padding">4dp</dimen>
     <dimen name="btn_radius">10dp</dimen>
     <dimen name="btn_height">55dp</dimen>
+    <dimen name="side_margin">13dp</dimen>
 </resources>

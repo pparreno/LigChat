@@ -5,4 +5,5 @@
     <color name="colorPrimaryDark">#61a304</color>
     <color name="colorPrimaryDarkPressed">#427002</color>
     <color name="colorAccent">#771cf9</color>
+    <color name="text_gray">#647787</color>
 </resources>
