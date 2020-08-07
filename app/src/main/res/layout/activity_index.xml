@@ -25,6 +25,7 @@
         android:layout_marginEnd="13dp"
         android:text="@string/sign_up"
         style="@style/AppButton"
+        android:onClick="onSignUpButtonClick"
         android:background="@drawable/btn_dark_green_rounded"
         app:layout_constraintTop_toBottomOf="@id/center_stub" />
 
