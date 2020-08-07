@@ -5,7 +5,7 @@
     android:id="@+id/sign_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.fragment.SignUpFragment">
+    tools:context=".onboarding.fragment.SignInFragment">
 
 
     <LinearLayout
@@ -70,7 +70,7 @@
             android:visibility="gone" />
 
         <com.pparreno.ligchat.views.ArialButton
-            android:id="@+id/signup_btn"
+            android:id="@+id/login_btn"
             style="@style/AppButton"
             android:layout_width="match_parent"
             android:layout_height="55dp"
@@ -78,7 +78,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="@dimen/side_margin"
             android:background="@drawable/btn_primary_green_rounded"
-            android:text="@string/sign_up" />
+            android:text="@string/login" />
 
         <TextView
             android:id="@+id/login_text"
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="@string/login_underline"
+            android:text="@string/sign_up_underline"
             android:textSize="16sp"
             android:textStyle="bold" />
 

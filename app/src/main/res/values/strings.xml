@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Chat App</string>
     <string name="sign_up">Sign Up</string>
+    <string name="sign_up_underline"><u>Sign Up</u></string>
     <string name="login">Login</string>
     <string name="login_underline"><u>Login</u></string>
     <string name="username">Username</string>
@@ -8,13 +9,4 @@
     <string name="email">Email</string>
     <string name="terms_agreement_text">By signing up, you agree to the Terms of Service and Privacy Policy, including CookieUse. Others will be able to find you by searching for your email address or phone number when provided.</string>
     <string name="value_is_incorrect">Value is incorrect</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
 </resources>

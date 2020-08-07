@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.pparreno.ligchat.R;
+import com.pparreno.ligchat.constants.OnBoardingType;
 import com.pparreno.ligchat.onboarding.activity.OnBoardingActivity;
 
 public class IndexActivity extends AppCompatActivity {
@@ -21,10 +22,13 @@ public class IndexActivity extends AppCompatActivity {
 
     public void onSignUpButtonClick(@NonNull View v){
         Intent intent = new Intent(this, OnBoardingActivity.class);
+        intent.putExtra(OnBoardingActivity.KEY_ON_BOARDING_TYPE, OnBoardingType.SIGN_UP);
         startActivity(intent);
     }
 
     public void onSignInpButtonClick(@NonNull View v){
-
+        Intent intent = new Intent(this, OnBoardingActivity.class);
+        intent.putExtra(OnBoardingActivity.KEY_ON_BOARDING_TYPE, OnBoardingType.SIGN_IN);
+        startActivity(intent);
     }
 }
