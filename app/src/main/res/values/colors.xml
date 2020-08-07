@@ -6,4 +6,6 @@
     <color name="colorPrimaryDarkPressed">#427002</color>
     <color name="colorAccent">#771cf9</color>
     <color name="text_gray">#647787</color>
+    <color name="field_bg">#f5f7f9</color>
+    <color name="error_red">#cc3432</color>
 </resources>

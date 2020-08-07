@@ -8,9 +8,10 @@
     tools:context=".onboarding.fragment.SignUpFragment">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/top_label_text"
@@ -20,43 +21,53 @@
             android:letterSpacing="0.1"
             android:text="@string/app_name"
             android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/top_borderline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#cbd5dd"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top_label_text" />
+            android:background="#cbd5dd" />
 
         <EditText
             android:id="@+id/email_field"
+            style="@style/AppField"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginStart="@dimen/side_margin"
             android:layout_marginTop="44dp"
-            android:layout_marginEnd="@dimen/side_margin"
             android:hint="@string/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top_borderline" />
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/email_error_text"
+            style="@style/AppTextError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@string/value_is_incorrect"
+            android:textSize="20sp"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/password_field"
+            style="@style/AppField"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginStart="@dimen/side_margin"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="@dimen/side_margin"
             android:hint="@string/password"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/email_field" />
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/password_error_text"
+            style="@style/AppTextError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@string/value_is_incorrect"
+            android:textSize="20sp"
+            android:visibility="gone" />
 
         <com.pparreno.ligchat.views.ArialButton
             android:id="@+id/login_btn"
@@ -67,42 +78,33 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="@dimen/side_margin"
             android:background="@drawable/btn_primary_green_rounded"
-            android:text="@string/sign_up"
-            app:layout_constraintTop_toBottomOf="@id/password_field" />
+            android:text="@string/sign_up" />
 
         <TextView
             android:id="@+id/login_text"
+            style="@style/AppText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:letterSpacing="0.1"
             android:text="@string/login_underline"
-            android:textColor="@color/text_gray"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_btn" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/terms_agreement_text"
+            style="@style/AppText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
             android:layout_marginTop="26dp"
             android:layout_marginEnd="@dimen/side_margin"
-            android:layout_marginStart="@dimen/side_margin"
             android:gravity="center"
-            android:letterSpacing="0.1"
             android:text="@string/terms_agreement_text"
-            android:textColor="@color/text_gray"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_text" />
+            android:textSize="16sp" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 
 </ScrollView>
