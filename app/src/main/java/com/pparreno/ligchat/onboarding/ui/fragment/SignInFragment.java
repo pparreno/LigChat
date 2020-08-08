@@ -1,4 +1,4 @@
-package com.pparreno.ligchat.onboarding.fragment;
+package com.pparreno.ligchat.onboarding.ui.fragment;
 
 import androidx.lifecycle.ViewModelProviders;
 

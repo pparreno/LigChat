@@ -1,4 +1,4 @@
-package com.pparreno.ligchat.chatroom.fragment;
+package com.pparreno.ligchat.chatroom.ui.fragment;
 
 import androidx.lifecycle.ViewModelProviders;
 

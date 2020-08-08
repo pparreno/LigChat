@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chatroom.fragment.ChatRoomFragment">
+    tools:context=".chatroom.ui.fragment.ChatRoomFragment">
 
     <TextView
         android:id="@+id/top_label_text"

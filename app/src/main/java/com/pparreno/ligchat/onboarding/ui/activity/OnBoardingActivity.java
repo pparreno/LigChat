@@ -1,4 +1,4 @@
-package com.pparreno.ligchat.onboarding.activity;
+package com.pparreno.ligchat.onboarding.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,8 @@ import android.os.Bundle;
 
 import com.pparreno.ligchat.R;
 import com.pparreno.ligchat.constants.OnBoardingType;
-import com.pparreno.ligchat.onboarding.fragment.SignInFragment;
-import com.pparreno.ligchat.onboarding.fragment.SignUpFragment;
+import com.pparreno.ligchat.onboarding.ui.fragment.SignInFragment;
+import com.pparreno.ligchat.onboarding.ui.fragment.SignUpFragment;
 
 import java.util.Objects;
 

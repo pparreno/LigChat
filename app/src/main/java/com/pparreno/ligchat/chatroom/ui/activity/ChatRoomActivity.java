@@ -1,11 +1,11 @@
-package com.pparreno.ligchat.chatroom.activity;
+package com.pparreno.ligchat.chatroom.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 import com.pparreno.ligchat.R;
-import com.pparreno.ligchat.chatroom.fragment.ChatRoomFragment;
+import com.pparreno.ligchat.chatroom.ui.fragment.ChatRoomFragment;
 
 public class ChatRoomActivity extends AppCompatActivity {
 

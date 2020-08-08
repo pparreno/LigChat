@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.pparreno.ligchat.R;
 import com.pparreno.ligchat.constants.OnBoardingType;
-import com.pparreno.ligchat.onboarding.activity.OnBoardingActivity;
+import com.pparreno.ligchat.onboarding.ui.activity.OnBoardingActivity;
 
 public class IndexActivity extends AppCompatActivity {
 
