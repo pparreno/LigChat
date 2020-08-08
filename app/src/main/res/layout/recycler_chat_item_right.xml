@@ -13,6 +13,7 @@
         android:layout_width="7dp"
         android:layout_height="14dp"
         android:layout_marginBottom="34dp"
+        android:contentDescription="@string/stub"
         android:src="@drawable/right_stub_chat_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -26,17 +27,21 @@
         android:padding="10dp"
         android:text="@string/lorem_ipsum"
         android:textColor="#ffffff"
+        android:textSize="@dimen/chat_text_size"
         app:layout_constraintEnd_toStartOf="@id/speech_bubble_stub"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="@string/sample_name"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:textStyle="bold"
         android:letterSpacing="0.1"
+        android:text="@string/sample_name"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/chat_text_size"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/chat_text"
-        app:layout_constraintTop_toBottomOf="@id/chat_text"
-        android:textColor="@color/text_gray"/>
+        app:layout_constraintTop_toBottomOf="@id/chat_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
