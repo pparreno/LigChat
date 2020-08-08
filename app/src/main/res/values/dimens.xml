@@ -7,4 +7,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="fragment_horizontal_margin">16dp</dimen>
     <dimen name="fragment_vertical_margin">16dp</dimen>
+
+    <dimen name="chat_box_start_padding">6dp</dimen>
+    <dimen name="chat_box_top_padding">27dp</dimen>
+    <dimen name="chat_box_end_padding">48dp</dimen>
 </resources>
