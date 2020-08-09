@@ -105,7 +105,9 @@ public class SignUpFragment extends Fragment {
 
     public void onRegisterButtonClick() {
         if (validateFields()) {
-            this.mViewModel.registerUser("", "", "");
+            this.mViewModel.registerUser(usernameField.getText().toString(),
+                    emailField.getText().toString(),
+                    passwordField.getText().toString());
         }
     }
 
