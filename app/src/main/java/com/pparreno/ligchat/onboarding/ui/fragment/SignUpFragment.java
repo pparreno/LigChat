@@ -68,8 +68,8 @@ public class SignUpFragment extends Fragment {
 
         progressHUD = KProgressHUD.create(getActivity())
                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
-                .setLabel("Please wait")
-                .setDetailsLabel("Registering")
+                .setLabel(getString(R.string.please_wait))
+                .setDetailsLabel(getString(R.string.registering))
                 .setCancellable(false)
                 .setAnimationSpeed(2)
                 .setDimAmount(0.5f);

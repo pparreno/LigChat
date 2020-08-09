@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.pparreno.ligchat.onboarding.repository.SignUpRepository;
 
 public class SignUpViewModel extends ViewModel {
-    private MutableLiveData<FirebaseUser> user;
     private LifecycleOwner lifecycleOwner;
 
     private SignUpRepository signUpRepository;
