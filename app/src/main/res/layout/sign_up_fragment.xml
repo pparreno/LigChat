@@ -30,6 +30,28 @@
             android:background="#cbd5dd" />
 
         <EditText
+            android:id="@+id/username_field"
+            style="@style/AppField"
+            android:layout_width="match_parent"
+            android:layout_marginTop="28dp"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:maxLength="16" />
+
+        <TextView
+            android:id="@+id/username_error_text"
+            style="@style/AppTextError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@string/value_is_incorrect"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+        <EditText
             android:id="@+id/email_field"
             style="@style/AppField"
             android:layout_width="match_parent"
@@ -55,7 +77,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="28dp"
             android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:maxLength="16" />
 
         <TextView
             android:id="@+id/password_error_text"
