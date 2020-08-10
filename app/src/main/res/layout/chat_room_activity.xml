@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/chat_room"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chatroom.ui.fragment.ChatRoomFragment">
+    android:orientation="vertical"
+    tools:context=".chatroom.ui.activity.ChatRoomActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/top_label_text"
@@ -25,21 +26,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.pparreno.ligchat.views.ArialButton
-            android:id="@+id/send_button"
+            android:id="@+id/log_out_button"
             android:layout_width="75dp"
             android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/btn_dark_gray_rounded"
             android:letterSpacing="0.1"
+            android:onClick="onLogOutButtonClicked"
             android:text="@string/logout"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/top_label_text"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     <View
@@ -48,10 +49,11 @@
         android:layout_height="1dp"
         android:background="#cbd5dd" />
 
-    <FrameLayout android:layout_height="0dp"
-        android:layout_weight="1"
+    <FrameLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 
 </LinearLayout>
