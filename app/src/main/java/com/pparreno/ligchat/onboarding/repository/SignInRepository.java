@@ -10,8 +10,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import timber.log.Timber;
-
 public class SignInRepository {
 
     private FirebaseAuth mAuth;

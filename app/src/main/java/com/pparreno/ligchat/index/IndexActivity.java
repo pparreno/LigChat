@@ -1,11 +1,11 @@
 package com.pparreno.ligchat.index;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.pparreno.ligchat.R;
 import com.pparreno.ligchat.constants.OnBoardingType;

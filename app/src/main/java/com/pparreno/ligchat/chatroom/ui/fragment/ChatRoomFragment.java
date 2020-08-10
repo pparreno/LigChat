@@ -30,8 +30,6 @@ import com.pparreno.ligchat.chatroom.viewmodel.ChatRoomViewModel;
 
 import java.util.Objects;
 
-import static android.content.Context.INPUT_METHOD_SERVICE;
-
 public class ChatRoomFragment extends Fragment {
 
     private ChatRoomViewModel mViewModel;

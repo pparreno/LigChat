@@ -1,15 +1,7 @@
 package com.pparreno.ligchat.onboarding.ui.fragment;
 
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,13 +10,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.pparreno.ligchat.R;
 import com.pparreno.ligchat.chatroom.ui.activity.ChatRoomActivity;
 import com.pparreno.ligchat.onboarding.viewmodel.SignUpViewModel;
 import com.pparreno.ligchat.utils.FieldValidator;
-
-import java.lang.reflect.Field;
 
 public class SignUpFragment extends Fragment {
 

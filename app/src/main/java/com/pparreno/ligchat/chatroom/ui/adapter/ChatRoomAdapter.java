@@ -1,11 +1,8 @@
 package com.pparreno.ligchat.chatroom.ui.adapter;
 
-import android.content.Context;
-import android.util.ArraySet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
