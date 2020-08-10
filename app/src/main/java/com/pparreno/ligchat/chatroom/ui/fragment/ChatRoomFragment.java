@@ -111,7 +111,11 @@ public class ChatRoomFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                sendButton.setEnabled(editable.toString().length() > 0);
+                if (editable.length() > 0) {
+                    sendButton.setEnabled(true);
+                } else {
+                    sendButton.setEnabled(false);
+                }
             }
         });
 
@@ -119,8 +123,7 @@ public class ChatRoomFragment extends Fragment {
 
     private void sendMessage() {
         String messageString = messageField.getText().toString();
-        if(messageString.length() > 0)
-        {
+        if (messageString.length() > 0) {
             Message message = new Message(messageField.getText().toString(), User.createUserFromFirebase());
             mViewModel.sendNewChatMessage(message);
             messageField.getText().clear();
