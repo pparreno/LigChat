@@ -33,6 +33,8 @@ public class SignInFragment extends Fragment {
     private TextView passwordErrorText;
     private TextView emailErrorText;
 
+    private SignInFragmentListener signInFragmentListener;
+
     public static SignInFragment newInstance() {
         return new SignInFragment();
     }
@@ -48,12 +50,20 @@ public class SignInFragment extends Fragment {
 
         this.emailErrorText = v.findViewById(R.id.email_error_text);
         this.passwordErrorText = v.findViewById(R.id.password_error_text);
+        TextView navigateToLoginText = v.findViewById(R.id.sign_up_text);
+        navigateToLoginText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onNavigateToSignUpTextClick();
+            }
+        });
         return v;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        signInFragmentListener = (SignInFragmentListener) this.getActivity();
         mViewModel = ViewModelProviders.of(this).get(SignInViewModel.class);
         progressHUD = KProgressHUD.create(getActivity())
                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
@@ -121,4 +131,13 @@ public class SignInFragment extends Fragment {
         }
     }
 
+    public void onNavigateToSignUpTextClick() {
+        if (signInFragmentListener != null) {
+            signInFragmentListener.onSignUpTextClicked();
+        }
+    }
+
+    public interface SignInFragmentListener {
+        void onSignUpTextClicked();
+    }
 }

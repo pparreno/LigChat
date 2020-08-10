@@ -35,6 +35,8 @@ public class SignUpFragment extends Fragment {
     private TextView passwordErrorText;
     private TextView emailErrorText;
 
+    private SignUpFragmentListener signUpFragmentListener;
+
     public static SignUpFragment newInstance() {
         return new SignUpFragment();
     }
@@ -53,14 +55,20 @@ public class SignUpFragment extends Fragment {
         this.usernameErrorText = v.findViewById(R.id.username_error_text);
         this.emailErrorText = v.findViewById(R.id.email_error_text);
         this.passwordErrorText = v.findViewById(R.id.password_error_text);
-
+        TextView navigateToLoginText = v.findViewById(R.id.login_text);
+        navigateToLoginText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onNavigateToSignInTextClick();
+            }
+        });
         return v;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        signUpFragmentListener = (SignUpFragmentListener) this.getActivity();
         progressHUD = KProgressHUD.create(getActivity())
                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
                 .setLabel(getString(R.string.please_wait))
@@ -91,6 +99,7 @@ public class SignUpFragment extends Fragment {
                 onRegisterButtonClick();
             }
         });
+
     }
 
     private void navigateToChatRoom() {
@@ -131,6 +140,16 @@ public class SignUpFragment extends Fragment {
 
             return false;
         }
+    }
+
+    public void onNavigateToSignInTextClick() {
+        if (signUpFragmentListener != null) {
+            signUpFragmentListener.onSignInTextClicked();
+        }
+    }
+
+    public interface SignUpFragmentListener {
+        void onSignInTextClicked();
     }
 
 }
