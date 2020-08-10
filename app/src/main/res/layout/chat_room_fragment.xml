@@ -30,7 +30,7 @@
             android:layout_alignParentEnd="true"/>
 
         <EditText
-            android:id="@+id/username_field"
+            android:id="@+id/message_field"
             style="@style/AppField"
             android:layout_height="55dp"
             android:layout_width="0dp"

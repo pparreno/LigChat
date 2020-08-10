@@ -6,7 +6,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.pparreno.ligchat.onboarding.repository.SignInRepository;
-import com.pparreno.ligchat.onboarding.repository.SignUpRepository;
 
 public class SignInViewModel extends ViewModel {
     private LifecycleOwner lifecycleOwner;

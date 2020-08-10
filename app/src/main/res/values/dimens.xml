@@ -12,4 +12,5 @@
     <dimen name="chat_box_top_padding">27dp</dimen>
     <dimen name="chat_box_end_padding">48dp</dimen>
     <dimen name="chat_text_size">16sp</dimen>
+    <dimen name="message_bubble_stub_margin_bottom">36dp</dimen>
 </resources>

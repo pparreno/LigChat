@@ -12,7 +12,7 @@
         android:id="@+id/speech_bubble_stub"
         android:layout_width="7dp"
         android:layout_height="14dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="@dimen/message_bubble_stub_margin_bottom"
         android:contentDescription="@string/stub"
         android:src="@drawable/right_stub_chat_item"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,6 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/owner_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
