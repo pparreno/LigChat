@@ -1,23 +1,20 @@
 package com.pparreno.ligchat.chatroom.model;
 
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
-import java.util.Map;
+
 
 public class Message implements Serializable {
     String message;
     User owner;
-    Map<String, String> timestamp;
 
     public Message() {
     }
 
-    public Message(String message, User owner, Map<String, String> timeStamp) {
+    public Message(@NonNull String message, @NonNull User owner) {
         this.message = message;
         this.owner = owner;
-    }
-
-    public Map<String, String> getTimestamp() {
-        return timestamp;
     }
 
     public String getMessage() {
@@ -27,4 +24,6 @@ public class Message implements Serializable {
     public User getOwner() {
         return owner;
     }
+
+
 }

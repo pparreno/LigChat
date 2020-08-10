@@ -5,6 +5,7 @@ import android.util.ArraySet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,7 +29,21 @@ public class ChatRoomAdapter extends RecyclerView.Adapter<ChatRoomViewHolder> {
     }
 
     public void addMessage(@NonNull Message message) {
-        this.messages.add(message);
+        if (!this.messages.contains(message)) {
+            this.messages.add(message);
+            notifyDataSetChanged();
+        }
+    }
+
+    public void setMessages(@NonNull List<Message> messages) {
+        clearData();
+        this.messages = new ArrayList<>(messages);
+        notifyDataSetChanged();
+    }
+
+    public void clearData() {
+        this.messages.clear();
+        notifyDataSetChanged();
     }
 
     @NonNull

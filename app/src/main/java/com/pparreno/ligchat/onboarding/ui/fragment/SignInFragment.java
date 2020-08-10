@@ -71,7 +71,7 @@ public class SignInFragment extends Fragment {
             if (isAuthenticated) {
                 navigateToChatRoom();
             } else {
-                Toast.makeText(SignInFragment.this.getContext(), "Registration Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignInFragment.this.getContext(), "Authentication Error", Toast.LENGTH_SHORT).show();
             }
         });
         this.mViewModel.flagAuthProcessOnGoing.observe(getViewLifecycleOwner(), flagAuthProcessOnGoing -> {
