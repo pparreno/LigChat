@@ -17,4 +17,5 @@
     <string name="signing_in">Logging In</string>
     <string name="send">send</string>
     <string name="start_new_msg">Start new message</string>
+    <string name="logout">Log out</string>
 </resources>
