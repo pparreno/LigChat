@@ -25,7 +25,7 @@ public class OnBoardingActivity extends AppCompatActivity implements SignInFragm
         setContentView(R.layout.activity_onboarding);
         getSupportActionBar().hide();
         if (savedInstanceState == null) {
-            if (!(Objects.requireNonNull(getIntent().getExtras()).getInt(KEY_ON_BOARDING_TYPE) == OnBoardingType.SIGN_UP)) {
+            if ((Objects.requireNonNull(getIntent().getExtras()).getInt(KEY_ON_BOARDING_TYPE) == OnBoardingType.SIGN_UP)) {
                 replaceToSignUpFragment();
             } else {
                 replaceToSignInFragment();

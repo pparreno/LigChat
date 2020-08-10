@@ -5,6 +5,8 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
+import com.google.firebase.crashlytics.internal.common.CrashlyticsCore;
 import com.pparreno.ligchat.BuildConfig;
 
 import timber.log.Timber;
@@ -31,15 +33,17 @@ public class LigChatApp extends Application {
                 return;
             }
 
-//            FakeCrashLibrary.log(priority, tag, message);
-//
-//            if (t != null) {
-//                if (priority == Log.ERROR) {
-//                    FakeCrashLibrary.logError(t);
-//                } else if (priority == Log.WARN) {
-//                    FakeCrashLibrary.logWarning(t);
-//                }
-//            }
+            FirebaseCrashlytics firebaseCrashlytics = FirebaseCrashlytics.getInstance();
+            firebaseCrashlytics.setCustomKey("priority", priority);
+            firebaseCrashlytics.setCustomKey("tag", tag);
+
+            if (t != null) {
+                if (priority == Log.ERROR) {
+                    firebaseCrashlytics.recordException(t);
+                } else if (priority == Log.WARN) {
+                    firebaseCrashlytics.log("Warning: " + message + " " + t.getMessage());
+                }
+            }
         }
     }
 
